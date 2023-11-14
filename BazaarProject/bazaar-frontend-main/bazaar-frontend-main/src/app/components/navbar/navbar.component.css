@@ -1,0 +1,29 @@
+a {
+    font-size:15px;
+    font-weight:800
+  }
+  .superNav {
+    font-size:13px;
+  }
+  .form-control {
+    outline:none !important;
+    box-shadow: none !important;
+  }
+  @media screen and (max-width:540px){
+    .centerOnMobile {
+      text-align:center
+    }
+  }
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #2d3e50;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .logo span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+  }
