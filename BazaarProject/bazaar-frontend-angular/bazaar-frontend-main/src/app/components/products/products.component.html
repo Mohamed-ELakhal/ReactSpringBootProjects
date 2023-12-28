@@ -1,0 +1,28 @@
+<div class="row">
+    <div 
+      *ngFor="let product of products"
+      class="col-lg-3 col-md-6 card product-box">
+        <div class="card-header p-0 position-relative fill">
+            <img [src]="product.imageUrl" alt="Product Image" class="card-img-top" style="width: 300px; height: 270px;"
+            onerror="src='/assets/images/products/placeholder.png';"
+            [routerLink]="['/products/',product.id]"
+            >
+          <div class="actions position-absolute top-0 end-0 p-3">
+            <a (click)="addToCart(product)" type="button" id="addToCart" class="btn btn-primary"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="btn btn-secondary"><i class="bi bi-heart"></i></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h2 
+          [routerLink]="['/products/',product.id]"
+          class="card-title mb-0">{{ product.name | slice:0:50 }} <span *ngIf="product.name!.length>50">...</span></h2>
+          <p 
+          [routerLink]="['/products/',product.id]"
+          class="card-text price"> {{ product.unitPrice | currency:'EGP' }}</p>
+        </div>
+    </div>
+</div>
+<div *ngIf="products.length == 0" class="alert alert-warning col-md-12" role="alert">
+  No Products found.
+</div>
+<app-pagination [pageNumber]="pageNumber" [totalPages]="totalPages"></app-pagination>
