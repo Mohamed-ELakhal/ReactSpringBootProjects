@@ -1,9 +1,9 @@
-package mohamed.bazaar.repositories;
+package nabil.bazaar.repositories;
 
-import mohamed.bazaar.domain.Address;
-import mohamed.bazaar.domain.Order;
-import mohamed.bazaar.domain.OrderLine;
-import mohamed.bazaar.domain.Product;
+import nabil.bazaar.domain.Address;
+import nabil.bazaar.domain.Order;
+import nabil.bazaar.domain.OrderLine;
+import nabil.bazaar.domain.Product;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 /**
- * @author Mohamed Magdy
+ * @author Ahmed Nabil
  */
 @SpringBootTest
 class OrderRepositoryTest {

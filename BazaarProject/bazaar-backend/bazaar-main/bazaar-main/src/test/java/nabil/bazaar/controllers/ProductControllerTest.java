@@ -1,9 +1,9 @@
-package mohamed.bazaar.controllers;
+package nabil.bazaar.controllers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import mohamed.bazaar.domain.Category;
-import mohamed.bazaar.domain.Product;
-import mohamed.bazaar.services.ProductService;
+import nabil.bazaar.domain.Category;
+import nabil.bazaar.domain.Product;
+import nabil.bazaar.services.ProductService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 /**
- * @author Mohamed Magdy
+ * @author Ahmed Nabil
  */
 @WebMvcTest(ProductController.class)
 @AutoConfigureMockMvc(addFilters = false)

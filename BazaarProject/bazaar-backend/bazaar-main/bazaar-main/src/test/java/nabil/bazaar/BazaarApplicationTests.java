@@ -1,4 +1,4 @@
-package mohamed.bazaar;
+package nabil.bazaar;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

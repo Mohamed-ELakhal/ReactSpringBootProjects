@@ -1,7 +1,7 @@
-package mohamed.bazaar.repositories;
+package nabil.bazaar.repositories;
 
-import mohamed.bazaar.domain.Category;
-import mohamed.bazaar.domain.Product;
+import nabil.bazaar.domain.Category;
+import nabil.bazaar.domain.Product;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * @author Mohamed Magdy
+ * @author Ahmed Nabil
  */
 @DataJpaTest
 @ActiveProfiles("test")
