@@ -4,6 +4,10 @@ import {
   createBrowserRouter,
 } from 'react-router-dom';
 import { QueryClientProvider } from '@tanstack/react-query';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import Main from './components/Main.jsx';
 import { queryClient } from './util/http.jsx';
 import Cart from './components/cart-details/Cart.jsx';
